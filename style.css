@@ -1,0 +1,273 @@
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* set the default color, font-size, and line height */
+html {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1200px; /* change this width to make a wider page!*/
+  padding: 0 1em; /* 1em of padding on the left and right side */
+}
+
+/* make images and embedded media fluid */
+img,
+object {
+  max-width: 100%;
+}
+
+/* type hierarchy- change for your project */
+h1 {
+  font-size: 4em; /* 48px */
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 7px;
+}
+
+h2 {
+  font-size: 3em; /* 48px */
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  padding top: 40px;
+}
+
+h3 {
+  font-size: 1.75em /* 28px */
+  font-family: 'Playfair Display', serif;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+h4 {
+  font-size: 1.125em /*18px */
+}
+
+/* navigation list styles */
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+  text-align: center;
+  display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #333333;
+}
+
+video {
+  margin: 0 auto;
+  display: block;
+  background-color: black;
+  max-width: 100%;
+}
+
+.blackbox {
+  border: 2px solid black;
+  margin:auto;
+  background-color: black;
+}
+
+.bordered {
+  border-top: 2px solid #000;
+  padding-top: 40px;
+  margin-top: 40px;
+  max-width: 1150px;
+  margin: 40px auto 0 auto;;
+  text-align: center;
+}
+
+p{
+  font-family: 'Playfair Display', serif;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.icons{
+  text-align: center;
+}
+.row {
+  margin-top: 0 auto;
+}
+
+
+
+
+/* =======================================
+    author styles
+    place your custom styles below here
+========================================== */
+
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.img-list li {
+  display: inline-block;
+  height: 150px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 150px;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================================
+    Layout
+    keep this at the bottom
+========================================== */
+
+@media (min-width: 620px) {
+  .column {
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .column.full {
+    width: 100%;
+  }
+
+  .column.two-thirds {
+    width: 66.7%;
+  }
+
+  .column.half {
+    width: 50%;
+  }
+
+  .column.third {
+    width: 33.3%;
+    size: 75px;
+  }
+
+  .column.fourth {
+    width: 25%;
+  }
+
+  .column.flow-opposite {
+    float: right;
+  }
+}
+
+
+/* row used as a clearfix to clear floats */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  *zoom: 1;
+}
