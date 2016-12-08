@@ -106,7 +106,6 @@ video {
   border: 2px solid black;
   margin:auto;
   background-color: black;
-  text-align: center;
 }
 
 .bordered {
@@ -116,11 +115,6 @@ video {
   max-width: 1150px;
   margin: 40px auto 0 auto;;
   text-align: center;
-}
-
-.Review {
-  margin: 0 auto;
-  display: block;
 }
 
 p{
